@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Era Móveis Sob Medida - Ambientes para Viver</title>
+    <meta name="description" content="Nova Era Móveis Sob Medida - Móveis planejados para cozinhas, dormitórios, closets, banheiros, salas e ambientes comerciais. Pagamento facilitado em até 10x sem juros.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Banner de Pagamento Facilitado -->
+    <div class="payment-banner">
+        <div class="payment-banner-content">
+            <i class="fas fa-credit-card"></i>
+            <span>Pagamento facilitado em até 10x sem juros</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="logo.svg" alt="Nova Era Móveis Sob Medida" class="logo">
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sobre" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item has-submenu">
+                        <a href="#servicos" class="nav-link">Serviços <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#cozinhas">Cozinhas</a></li>
+                            <li><a href="#dormitorios">Dormitórios</a></li>
+                            <li><a href="#closets">Closets</a></li>
+                            <li><a href="#banheiros">Banheiros</a></li>
+                            <li><a href="#salas">Salas</a></li>
+                            <li><a href="#comerciais">Ambientes Comerciais</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Alternar tema">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Nova Era Móveis Sob Medida</h1>
+            <p class="hero-subtitle">Ambientes para Viver</p>
+            <p class="hero-description">Móveis planejados com qualidade, beleza e preços acessíveis. Transformamos seus sonhos em realidade desde 2013.</p>
+            <div class="hero-buttons">
+                <a href="#servicos" class="btn btn-primary">Nossos Serviços</a>
+                <a href="https://wa.me/+5551986009570" class="btn btn-secondary" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Fale Conosco
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="NovaEraMóveis-Maio2025.jpg" alt="Nova Era Móveis - Cozinha Planejada" class="hero-img">
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre a Nova Era Móveis</h2>
+                <p class="section-subtitle">Qualidade e tradição desde 2013</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>A Nova Era Móveis Sob Medida está localizada na Zona Norte de Porto Alegre e iniciou suas atividades em 2013. Trabalhamos com esmero para oferecer soluções para o habitat por preços acessíveis.</p>
+                    <p>Nossos produtos possuem qualidade de acabamento e beleza, pois são produzidos com excelentes matérias-primas e com o carinho de cada uma das pessoas envolvidas no processo.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <div>
+                                <h4>MDF E1 Ecológico</h4>
+                                <p>Painéis com baixa emissão de formaldeído, mais seguros para sua saúde</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Qualidade Garantida</h4>
+                                <p>Produtos resistentes, bonitos e ecologicamente corretos</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Feito com Carinho</h4>
+                                <p>A emoção de quem trabalha para você e por você</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <p class="section-subtitle">Móveis planejados para todos os ambientes</p>
+            </div>
+            <div class="services-list">
+                <!-- Cozinhas -->
+                <div id="cozinhas" class="service-block">
+                    <h3>Cozinhas</h3>
+                    <p>Cozinhas planejadas modernas e funcionais, projetadas para otimizar o espaço e facilitar o dia a dia. Combinamos praticidade com design contemporâneo.</p>
+                    <div class="gallery">
+                        <!-- <img src="images/cozinhas/cozinha1.jpg" alt="Cozinha Planejada 1" data-category="cozinhas"> -->
+                        <img src="images/cozinhas/cozinha2.jpg" alt="Cozinha Planejada 2" data-category="cozinhas">
+                        <img src="images/cozinhas/cozinha3.jpg" alt="Cozinha Planejada 3" data-category="cozinhas">
+                        <img src="images/cozinhas/cozinha4.jpg" alt="Cozinha Planejada 4" data-category="cozinhas">
+                        <img src="images/cozinhas/cozinha5.jpg" alt="Cozinha Planejada 5" data-category="cozinhas">
+                        <img src="images/cozinhas/cozinha6.jpg" alt="Cozinha Planejada 6" data-category="cozinhas">
+                        <img src="images/cozinhas/cozinha7.jpg" alt="Cozinha Planejada 7" data-category="cozinhas">
+                        <img src="images/cozinhas/cozinha8.jpg" alt="Cozinha Planejada 8" data-category="cozinhas">
+                        <img src="images/cozinhas/cozinha9.jpg" alt="Cozinha Planejada 9" data-category="cozinhas">
+                        <img src="images/cozinhas/cozinha10.jpg" alt="Cozinha Planejada 10" data-category="cozinhas">
+                        <img src="images/cozinhas/cozinha11.jpg" alt="Cozinha Planejada 11" data-category="cozinhas">
+                        <img src="images/cozinhas/cozinha12.jpg" alt="Cozinha Planejada 12" data-category="cozinhas">
+                        <img src="images/cozinhas/cozinha13.jpg" alt="Cozinha Planejada 13" data-category="cozinhas">
+                        <img src="images/cozinhas/cozinha14.jpg" alt="Cozinha Planejada 14" data-category="cozinhas">
+                        <img src="images/cozinhas/cozinha15.jpg" alt="Cozinha Planejada 15" data-category="cozinhas">
+                        <img src="images/cozinhas/cozinha16.jpg" alt="Cozinha Planejada 16" data-category="cozinhas">
+                        <img src="images/cozinhas/cozinha17.jpg" alt="Cozinha Planejada 17" data-category="cozinhas">
+                        <img src="images/cozinhas/cozinha18.jpg" alt="Cozinha Planejada 18" data-category="cozinhas">
+                        <img src="images/cozinhas/cozinha19.jpg" alt="Cozinha Planejada 19" data-category="cozinhas">
+                        <img src="images/cozinhas/cozinha20.jpg" alt="Cozinha Planejada 20" data-category="cozinhas">
+                        <img src="images/cozinhas/cozinha21.jpg" alt="Cozinha Planejada 21" data-category="cozinhas">
+                        <img src="images/cozinhas/cozinha22.jpg" alt="Cozinha Planejada 22" data-category="cozinhas">
+                        <img src="images/cozinhas/cozinha12.jpg" alt="Cozinha Planejada 23" data-category="cozinhas"> 
+                    </div>
+                </div>
+
+                <!-- Dormitórios -->
+                <div id="dormitorios" class="service-block">
+                    <h3>Dormitórios</h3>
+                    <p>Dormitórios planejados que proporcionam conforto e organização. Criamos ambientes aconchegantes e funcionais para o seu descanso.</p>
+                    <div class="gallery">
+                        <img src="images/dormitorios/dormitorio1.jpg" alt="Dormitório Planejado 1" data-category="dormitorios">
+                        <!-- <img src="images/dormitorios/dormitorio2.jpg" alt="Dormitório Planejado 2" data-category="dormitorios"> -->
+                        <img src="images/dormitorios/dormitorio3.jpg" alt="Dormitório Planejado 3" data-category="dormitorios">
+                        <!-- <img src="images/dormitorios/dormitorio4.jpg" alt="Dormitório Planejado 4" data-category="dormitorios"> -->
+                        <!-- <img src="images/dormitorios/dormitorio5.jpg" alt="Dormitório Planejado 5" data-category="dormitorios"> -->
+                        <img src="images/dormitorios/dormitorio6.jpg" alt="Dormitório Planejado 6" data-category="dormitorios">
+                        <img src="images/dormitorios/dormitorio7.jpg" alt="Dormitório Planejado 7" data-category="dormitorios">
+                        <img src="images/dormitorios/dormitorio8.jpg" alt="Dormitório Planejado 8" data-category="dormitorios">
+                        <img src="images/dormitorios/dormitorio9.jpg" alt="Dormitório Planejado 9" data-category="dormitorios">
+                        <img src="images/dormitorios/dormitorio10.jpg" alt="Dormitório Planejado 10" data-category="dormitorios">
+                        <img src="images/dormitorios/dormitorio11.jpg" alt="Dormitório Planejado 11" data-category="dormitorios">
+                        <img src="images/dormitorios/dormitorio12.jpg" alt="Dormitório Planejado 12" data-category="dormitorios">
+                        <img src="images/dormitorios/dormitorio13.jpg" alt="Dormitório Planejado 13" data-category="dormitorios">
+                    </div>
+                </div>
+
+                <!-- Closets -->
+                <div id="closets" class="service-block">
+                    <h3>Closets</h3>
+                    <p>Closets organizados e elegantes para manter suas roupas e acessórios sempre em ordem. Soluções inteligentes de armazenamento.</p>
+                    <div class="gallery">
+                        <img src="images/closets/closet1.jpg" alt="Closet Planejado 1" data-category="closets">
+                        <img src="images/closets/closet2.jpg" alt="Closet Planejado 2" data-category="closets">
+                        <img src="images/closets/closet3.jpg" alt="Closet Planejado 3" data-category="closets">
+                        <img src="images/closets/closet4.jpg" alt="Closet Planejado 4" data-category="closets">
+                        <img src="images/closets/closet5.jpg" alt="Closet Planejado 5" data-category="closets">
+                        <img src="images/closets/closet6.jpg" alt="Closet Planejado 6" data-category="closets">
+                        <img src="images/closets/closet7.jpg" alt="Closet Planejado 7" data-category="closets">
+                        <img src="images/closets/closet8.jpg" alt="Closet Planejado 8" data-category="closets">
+                        <img src="images/closets/closet9.jpg" alt="Closet Planejado 9" data-category="closets">
+                        <img src="images/closets/closet10.jpg" alt="Closet Planejado 10" data-category="closets">
+                        <img src="images/closets/closet11.jpg" alt="Closet Planejado 11" data-category="closets">
+                        <img src="images/closets/closet12.jpg" alt="Closet Planejado 12" data-category="closets">
+                        <img src="images/closets/closet13.jpg" alt="Closet Planejado 13" data-category="closets">
+                    </div>
+                </div>
+
+                <!-- Banheiros -->
+                <div id="banheiros" class="service-block">
+                    <h3>Banheiros</h3>
+                    <p>Banheiros planejados que combinam funcionalidade e estilo. Aproveitamos cada centímetro para criar ambientes práticos e bonitos.</p>
+                    <div class="gallery">
+                        <img src="images/banheiros/banheiro1.jpg" alt="Banheiro Planejado 1" data-category="banheiros">
+                        <img src="images/banheiros/banheiro2.jpg" alt="Banheiro Planejado 2" data-category="banheiros">
+                        <img src="images/banheiros/banheiro3.jpg" alt="Banheiro Planejado 3" data-category="banheiros">
+                        <img src="images/banheiros/banheiro4.jpg" alt="Banheiro Planejado 4" data-category="banheiros">
+                        <img src="images/banheiros/banheiro5.jpg" alt="Banheiro Planejado 5" data-category="banheiros">
+                        <img src="images/banheiros/banheiro6.jpg" alt="Banheiro Planejado 6" data-category="banheiros">
+                    </div>
+                </div>
+
+                <!-- Salas -->
+                <div id="salas" class="service-block">
+                    <h3>Salas</h3>
+                    <p>Salas de estar e home theaters planejados para momentos de lazer e entretenimento. Ambientes acolhedores para toda a família.</p>
+                    <div class="gallery">
+                        <img src="images/salas/sala1.jpg" alt="Sala Planejada 1" data-category="salas">
+                        <img src="images/salas/sala2.jpg" alt="Sala Planejada 2" data-category="salas">
+                        <!-- <img src="images/salas/sala3.jpg" alt="Sala Planejada 3" data-category="salas"> -->
+                        <img src="images/salas/sala4.jpg" alt="Sala Planejada 4" data-category="salas">
+                        <img src="images/salas/sala5.jpg" alt="Sala Planejada 5" data-category="salas">
+                        <img src="images/salas/sala6.jpg" alt="Sala Planejada 5" data-category="salas">
+                    </div>
+                </div>
+
+                <!-- Ambientes Comerciais -->
+                <div id="comerciais" class="service-block">
+                    <h3>Ambientes Comerciais</h3>
+                    <p>Móveis planejados para escritórios e estabelecimentos comerciais. Soluções profissionais que transmitem credibilidade e organização.</p>
+                    <div class="gallery">
+                        <img src="images/ambientes/ambiente1.jpg" alt="Ambiente Comercial 1" data-category="comerciais">
+                        <img src="images/ambientes/ambiente2.jpg" alt="Ambiente Comercial 2" data-category="comerciais">
+                        <img src="images/ambientes/ambiente3.jpg" alt="Ambiente Comercial 3" data-category="comerciais">
+                        <img src="images/ambientes/ambiente4.jpg" alt="Ambiente Comercial 4" data-category="comerciais">
+                        <img src="images/ambientes/ambiente5.jpg" alt="Ambiente Comercial 5" data-category="comerciais">
+                        <img src="images/ambientes/ambiente6.jpg" alt="Ambiente Comercial 6" data-category="comerciais">
+                        <img src="images/ambientes/ambiente6.jpg" alt="Ambiente Comercial 7" data-category="comerciais">
+                        <img src="images/ambientes/ambiente6.jpg" alt="Ambiente Comercial 8" data-category="comerciais">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">Vamos transformar seus ambientes juntos</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Localização</h4>
+                            <p>Zona Norte de Porto Alegre, RS</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>(51) 98600-9570</p>
+                            <p>(51) 99147-6535</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefones</h4>
+                            <p>(51) 3388-7716</p>
+                            <p>(51) 99317-5847</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h4>Website</h4>
+                            <p>novaeramoveissobmedida.com.br</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h4>Instagram</h4>
+                            <p>@novaeramoveissobmedida</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Seu e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Seu telefone" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Selecione o serviço</option>
+                                <option value="cozinhas">Cozinhas</option>
+                                <option value="dormitorios">Dormitórios</option>
+                                <option value="closets">Closets</option>
+                                <option value="banheiros">Banheiros</option>
+                                <option value="salas">Salas</option>
+                                <option value="comerciais">Ambientes Comerciais</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Descreva seu projeto" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="logo.svg" alt="Nova Era Móveis" class="footer-logo">
+                    <p>Ambientes para Viver</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/+5551986009570" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/novaeramoveissobmedida" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/janiodiasfagundes" target="_blank" aria-label="Website">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://novaeramoveissobmedida.com.br" target="_blank" aria-label="Website">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#cozinhas">Cozinhas</a></li>
+                        <li><a href="#dormitorios">Dormitórios</a></li>
+                        <li><a href="#closets">Closets</a></li>
+                        <li><a href="#banheiros">Banheiros</a></li>
+                        <li><a href="#salas">Salas</a></li>
+                        <li><a href="#comerciais">Ambientes Comerciais</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Zona Norte - Porto Alegre, RS</li>
+                        <li><i class="fab fa-whatsapp"></i> (51) 98600-9570</li>
+                        <li><i class="fas fa-globe"></i> novaeramoveissobmedida.com.br</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nova Era Móveis Sob Medida. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5551986009570" class="whatsapp-float" target="_blank" aria-label="Contato via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+     <!-- WhatsApp Floating Button -->
+    <a href="https://www.instagram.com/novaeramoveissobmedida/" class="whatsapp-float-2" target="_blank" aria-label="Contato via Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+     <!-- WhatsApp Floating Button -->
+    <a href="https://www.facebook.com/janiodiasfagundes" class="whatsapp-float-3" target="_blank" aria-label="Contato via Facebook">
+        <i class="fab fa-facebook"></i>
+    </a>
+
+    <!-- Image Modal -->
+    <div id="image-modal" class="modal">
+        <span class="close-button">&times;</span>
+        <div class="modal-content">
+            <img id="modal-image" src="" alt="">
+            <a class="prev-button"><i class="fas fa-chevron-left"></i></a>
+            <a class="next-button"><i class="fas fa-chevron-right"></i></a>
+        </div>
+    </div>
+
+    <!-- Social Media Modal -->
+    <div id="social-modal" class="modal social-modal">
+        <div class="modal-content">
+            <h3>Siga-nos nas Redes Sociais!</h3>
+            <p>Fique por dentro das novidades e projetos incríveis da Nova Era Móveis.</p>
+            <div class="social-links-modal">
+                <a href="https://instagram.com/novaeramoveissobmedida" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.facebook.com/janiodiasfagundes" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+            </div>
+            <button class="close-button">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
